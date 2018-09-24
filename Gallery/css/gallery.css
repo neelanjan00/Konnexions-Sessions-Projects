@@ -1,0 +1,40 @@
+.body{
+	background-color: #fcf6e0;
+}
+
+.card-img-top{
+	 height:300px;
+}
+
+.jumbotron{
+	height: 300px;
+	width: 1130px;
+}
+
+.zoom {
+    background-image: url(images/1.jpg);
+    transition: transform .2s;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+
+#content {
+  background-color: #f2f9d9;
+  border-radius: 8px;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 2px solid #b9cc76;
+ }
+
+ img{
+  margin-left: auto;
+	margin-right: auto;
+	display: block;
+ }

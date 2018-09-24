@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Image Gallery</title>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body class="body">
+  <div id="content">
+    <div class="gallery">
+      <center><img src="images/Jumbotron.jpg" alt="My best Collections" height="400px" width="1100px"></center> 
+    </div>
+ </div>
+	<div class="container">
+		<div class="jumbotron" style="margin-top: 20px;background-color:#336699; background-image: url(images/mrd1.jpg); background-size: 100% 100%; background-repeat: no-repeat;opacity: 0.65;filter: alpha(opacity=65);">
+			<center><h1 style="color: white"><!--here was the i tag-->With Love, From a Place Frozen in Time</h1></center>
+		</div>
+
+		<div class="row ">
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12"  style="width: 18rem;padding:2px;">
+    <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/1.jpg" alt="Card image cap" style="padding:0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">On a Path Unseeked</h5>
+    <p class="card-text">I once walked alone though the empty streets...</p>
+    <a href="images/1.jpg" class="btn btn-info">Download</a>
+  </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 " style="width: 18rem;padding:2px;">
+  <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/2.jpg" alt="Card image cap" style="padding: 0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">In Search of that Dusk</h5>
+    <p class="card-text">Through the lengthened shadows...</p>
+    <a href="images/2.jpg" class="btn btn-info">Download</a>
+  </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 " style="width: 18rem;padding:2px;">
+  <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/3.jpg" alt="Card image cap" style="padding: 0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">Amid Surreal Beauties</h5>
+    <p class="card-text">I found my nirvana...</p>
+    <a href="images/3.jpg" class="btn btn-info">Download</a>
+  </div>
+</div>
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 " style="width: 18rem;padding:2px;">
+  <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/4.jpg" alt="Card image cap" style="padding: 0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">Amid my Sorrows</h5>
+    <p class="card-text">I would escape to the realm of dreams...</p>
+    <a href="images/4.jpg" class="btn btn-info">Download</a>
+  </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 " style="width: 18rem;padding:2px;">
+  <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/5.jpg" alt="Card image cap" style="padding: 0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">Through Roads not Taken</h5>
+    <p class="card-text">I'd chase my dreams when I woke...</p>
+    <a href="images/5.jpg" class="btn btn-info">Download</a>
+      </div>
+</div>
+
+<div class="shadow-lg  mb-5 bg-black rounded card col-lg-4 col-md-6 col-sm-12 " style="width: 18rem;padding:2px;">
+  <div class="zoom" >
+  <img class="card-img-top img-thumbnail" src="images/6.jpg" alt="Card image cap" style="padding: 0;"></div>
+  <div class="card-body">
+    <h5 class="card-title">In a Nameless Reverie</h5>
+    <p class="card-text">I was there for the dusk of my dreams...</p>
+    <a href="images/6.jpg" class="btn btn-info">Download</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="first" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Image title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="images/1.jpg" style="width: 100%">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="images/1.jpg" class="btn btn-primary" download>Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="Script/zoom.js"></script>
+<script type="text/javascript" src="Script/change.js"></script>
+<script type="text/javascript" src="Bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
