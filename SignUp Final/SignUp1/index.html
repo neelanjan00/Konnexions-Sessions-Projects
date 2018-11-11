@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+      <link rel="stylesheet" href="css/style.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <style>
+        body{
+        background-image: url("Images/Konnexions.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+    </head>
+    <body>
+
+      <form onsubmit="return do_check();" action="ReferalPage/Submited.html" method="post">
+      
+        <h1>Sign Up for Konnexions</h1>
+        
+        <fieldset>
+          <h3><span class="number">1</span>Your basic info</h3>
+
+          <label for="name1">First Name:</label>
+          <input type="text" id="name1" name="user_name" required>
+
+          <label for="name2">Last Name:</label>
+          <input type="text" id="name2" name="user_name" required>
+
+          <label for="roll">Roll No.:</label>
+          <input type="number" id="roll" name="user_roll" min="1500000" max="1900000" required>
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password" required>
+
+          <label for="tel">Phone Number:</label>
+          <input type="tel" pattern="(7|8|9)\d{9}" title="Format Eg: 1234567891" id="tel" name="user_phnumber" required>
+          
+          <label>Academic Year:</label>
+          <input type="radio" id="1year" value="1year" name="user_age" required><label for="1year" class="light">1st Year</label><br>
+          <input type="radio" id="2year" value="2year" name="user_age"><label for="2year" class="light">2nd Year</label><br>
+          <input type="radio" id="3year" value="3year" name="user_age"><label for="3year" class="light">3rd Year</label><br>
+          <input type="radio" id="4year" value="4year" name="user_age"><label for="4year" class="light">4th Year</label>
+        </fieldset>
+        
+          <h3>&nbsp;&nbsp;<span class="number">2</span>Your profile</h3>
+          <label for="bio">&nbsp;&nbsp;&nbsp;Biography:</label>
+          <textarea id="bio" name="user_bio" required></textarea>
+
+        <fieldset>
+        <label for="job">Select Course:</label>
+        <select id="job" name="user_job">
+            <option value="web_dev">Web Development</option>
+            <option value="android">Android</option>
+            <option value="machine_learning">Machine Learning</option>
+            <option value="networking">Networking</option>
+        </select>
+        
+          <label>Languages you know (if any):</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">C++</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Python</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Java</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">C</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">HTML</label>
+        
+        </fieldset>
+          <button type="submit" id="submitform">Sign Up</button>
+      </form>
+      <script type="text/javascript" src="Script/JS.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </body>
+</html>

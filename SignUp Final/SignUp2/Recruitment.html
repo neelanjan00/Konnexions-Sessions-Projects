@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Recruitment</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  
+      <link rel="stylesheet" href="styling.css">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <style>
+        body{
+        background-image: url("Konnexions.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
+    </head>
+    <body>
+      <form action="ReferalPage/Submited.html" method="post">
+        <h1>Apply for Konnexions Recruitment</h1>
+        <br>
+        <div class="back">
+            <h2>&nbsp;Your Basic Info</h2>
+          </div>
+
+        <fieldset>
+
+          <label for="name" class="lefttext">Name:</label>
+          <input type="text" id="name" name="user_name" required>
+
+          <label for="branch" class="lefttext">Branch:</label>
+          <input type="text" id="branch" name="user_branch" required>
+
+          <label for="roll" class="lefttext">Roll No.:</label>
+          <input type="number" id="roll" name="user_roll" min="1500000" max="1900000" required>
+          
+          <label for="mail" class="lefttext">Email:</label>
+          <input type="email" id="mail" name="user_email" required>
+
+          <label for="tel" class="lefttext">Phone Number:</label>
+          <input type="tel" pattern="(7|8|9)\d{9}" title="Format Eg: 1234567891" id="tel" name="user_phnumber" required>
+          
+          <label class="lefttext">Academic Year:</label>
+          <input type="radio" id="1year" value="1year" name="user_age" required><label for="1year" class="light">1st Year</label><br>
+          <input type="radio" id="2year" value="2year" name="user_age"><label for="2year" class="light">2nd Year</label><br>
+          <input type="radio" id="3year" value="3year" name="user_age"><label for="3year" class="light">3rd Year</label><br>
+          <input type="radio" id="4year" value="4year" name="user_age"><label for="4year" class="light">4th Year</label>
+        </fieldset>
+
+          <div class="back">
+            <h2>&nbsp;Your Profile</h2>
+          </div>
+
+          <fieldset>
+          <label class="lefttext">How Comfortable are you with your subject?</label>
+          <div class="rate">
+            <button class="ratescale" onclick="return false;">1</button><button class="ratescale" onclick="return false;">2</button><button class="ratescale" onclick="return false;">3</button><button class="ratescale" onclick="return false;">4</button><button class="ratescale" onclick="return false;">5</button>
+          </div>
+
+          <label class="lefttext">How comfortable are you with teaching?</label>
+          <div class="rate">
+            <button class="ratescale" onclick="return false;">1</button><button class="ratescale" onclick="return false;">2</button><button class="ratescale" onclick="return false;">3</button><button class="ratescale" onclick="return false;">4</button><button class="ratescale" onclick="return false;">5</button>
+          </div>
+
+        <label for="job" class="lefttext">Course applying for:</label>
+        <select id="job" name="user_job">
+            <option value="web_dev">Web Development</option>
+            <option value="android">Android</option>
+            <option value="machine_learning">Machine Learning</option>
+            <option value="networking">Networking</option>
+        </select>
+
+        <label class="lefttext">Are you certified in your subject?</label>
+          <input type="radio" id="Yes" value="Yes" name="certified"><label for="Yes" class="light">Yes</label>
+          <input type="radio" id="No" value="No" name="certified"><label for="No" class="light">No</label>
+          <br><br><br>
+
+        <label for="github" class="lefttext">Github Profile Link:</label>
+         <input type="link" id="github" name="git_link">
+
+         <label for="stackoverflow" class="lefttext">Stack-Overflow Profile Link:</label>
+          <input type="link" id="stackoverflow" name="stack_overflow">
+        </fieldset>
+
+        <div class="back">
+            <h2>&nbsp;Certification Details</h2>
+          </div>
+          <textarea id="bio" name="user_bio"></textarea>
+
+      <button type="submit" id="submitform">Submit</button>
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    </body>
+</html>
