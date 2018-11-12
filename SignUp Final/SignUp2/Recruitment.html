@@ -25,7 +25,7 @@
     </style>
     </head>
     <body>
-      <form action="ReferalPage/Submited.html" method="post">
+      <form onsubmit="return do_check();" action="ReferalPage/Submited.html" method="post">
         <h1>Apply for Konnexions Recruitment</h1>
         <br>
         <div class="back">
@@ -34,8 +34,8 @@
 
         <fieldset>
 
-          <label for="name" class="lefttext">Name:</label>
-          <input type="text" id="name" name="user_name" required>
+          <label for="name1" class="lefttext">Name:</label>
+          <input type="text" id="name1" name="user_name" required>
 
           <label for="branch" class="lefttext">Branch:</label>
           <input type="text" id="branch" name="user_branch" required>
@@ -45,6 +45,9 @@
           
           <label for="mail" class="lefttext">Email:</label>
           <input type="email" id="mail" name="user_email" required>
+
+          <label for="password" class="lefttext">Password:</label>
+          <input type="password" id="password" name="user_password" required>
 
           <label for="tel" class="lefttext">Phone Number:</label>
           <input type="tel" pattern="(7|8|9)\d{9}" title="Format Eg: 1234567891" id="tel" name="user_phnumber" required>
@@ -98,6 +101,7 @@
 
       <button type="submit" id="submitform">Submit</button>
       </form>
+      <script type="text/javascript" src="JS.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </body>
 </html>
